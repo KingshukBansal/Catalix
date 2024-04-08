@@ -8,8 +8,8 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 const Draw = () => {
   return (
     
-    <div className="flex flex-col items-center justify-center w-[75vw] relative">
-      <div className="flex flex-row items-start justify-start overflow-x-auto mt-8 py-8 w-[75vw] ">
+    <div className="flex flex-col items-center justify-center w-[75vw] relative ">
+      <div className="flex flex-row items-start justify-start overflow-x-auto no-scrollbar mt-24 py-8 w-[75vw] ">
         <div className="flex flex-col items-center justify-center h-full text-left  font-medium text-gray-500  ">
           <div className="flex h-full"></div>
           <div className="flex h-full w-28 mt-5">Active Time</div>
