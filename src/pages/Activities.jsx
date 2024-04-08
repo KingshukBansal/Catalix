@@ -7,29 +7,30 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Activities = () => {
   return (
-    <div className="flex flex-col items-center justify-center overflow-x-auto">
-      <div className="flex flex-row items-start justify-center p-8 m-8 w-full">
-        <div className="grid grid-rows-3 content-center h-full font-medium text-gray-500 w-28">
-          <div className="flex h-full">&nbsp;</div>
-          <div className="flex h-full w-auto">Active Time</div>
-          <div className="flex h-full">Wait Time</div>
+    
+    <div className="flex flex-col items-center justify-center w-[75vw] relative">
+      <div className="flex flex-row items-start justify-start overflow-x-auto mt-8 py-8 w-[75vw] ">
+        <div className="flex flex-col items-center justify-center h-full text-left  font-medium text-gray-500  ">
+          <div className="flex h-full"></div>
+          <div className="flex h-full w-28 mt-5">Active Time</div>
+          <div className="flex h-full w-full">Wait Time</div>
         </div>
-        <div className="flex flex-row items-start justify-center w-full border-b-4 border-secondary relative">
+        <div className="flex flex-row items-start justify-center  border-b-4 border-secondary relative">
 
         {
           
           data.map((d,i)=>{
             return(
               <>
-              <div key={i} className="flex flex-col justify-center items-center">
-                <div className="flex flex-row items-center justify-start  pb-8">
+              <div key={i} className="flex flex-col items-start justify-start">
+                <div className={`flex flex-rows items-center justify-start w-${d.endTask?"32":"72"} pb-8`}>
                   
                    <ShapeWithText heading={d.heading} endTask={d.endTask} />
 
                 </div>
                 
-                <div className="flex flex-row items-center justify-left border-y-2 py-4 w-full text-left"><div className={`w-${d.endTask?'1/2':'1/3'} text-center`}>{d.activeTime}</div></div>
-             <div className="w-full h-full min-h-[151px]"><div className="flex flex-row items-center justify-end w-full h-full"><div className={`bg-${d.endTask?'tertiary':'[#F1F7ED]'} py-8 text-left px-4 w-1/2 h-full  flex items-center min-h-[150px]`}>{d.waitTime}</div></div></div>
+                <div className="flex flex-row items-center  justify-left h-fit py-2 border-y-2 w-full text-left"><div className={`w-${d.endTask?'1/2':'1/3'} text-center`}>{d.activeTime}</div></div>
+             <div className="w-full h-full  min-h-[151px]"><div className="flex flex-row items-center justify-end w-full h-full"><div className={`bg-${d.endTask?'tertiary':'[#F1F7ED]'} py-8 text-left px-4 w-1/2 h-full  flex items-center min-h-[150px]`}>{d.waitTime}</div></div></div>
               </div>
               </>
             )
@@ -38,7 +39,7 @@ const Activities = () => {
 <FontAwesomeIcon icon={faAngleLeft} className="bottom-[-16px] text-secondary left-[-11px] absolute h-7 w-7"/>
 <FontAwesomeIcon icon={faAngleRight} className="bottom-[-16px] text-secondary right-[-11px] absolute h-7 w-7"/>
         </div>
-      <button><img src="/Plus.png" alt="plus" className=" ms-8 mt-3" /></button>
+      <button><img src="/Plus.png" alt="plus" className=" mx-8 pe-4 mt-3" /></button>
       </div>
       <div className="flex flex-row justify-around items-center py-2 font-bold w-full px-36 text-lg text-gray-600">
         <p>Flow Time = 47 Days</p>
@@ -56,7 +57,7 @@ const Activities = () => {
 const ShapeWithText=({heading,endTask})=>{
   return (
       <>
-      <div className="flex flex-col relative">
+             <div className="flex flex-col">
 
       <Shape /> <div className='absolute h-[73px] w-[90px] flex flex-col text-left ms-3 leading-tight text-base text-white font-semibold justify-center items-center'>{heading}</div>
             </div>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Section3 = () => {
   return (
-    <div className="grid grid-cols-3 grid-flow-col gap-4 mx-8 my-4">
+    <div className="grid grid-cols-3 gap-4 mx-8 my-4 justify-content-start">
       <div className="flex flex-col bg-white rounded-2xl border-2 border-grey-500 p-4 py-8 w-full">
         <div className="flex justify-end mb-4">
           <FontAwesomeIcon icon={faCircle} className="text-green-500 w-4 h-4" />
