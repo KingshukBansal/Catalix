@@ -16,14 +16,14 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-row bg-tertiary h-full">
-        <div className={`fixed top-0 left-0 botton-0 h-[100vh] w-${sideBarOpen?"[23%]":"0"} p-2 max-w-[23%] `}> 
+      <div className="flex flex-row justify-between w-full bg-tertiary h-full">
+        <div className={`fixed top-0 left-0 botton-0 h-[100vh] ${sideBarOpen?"w-[23%]":"w-0"} p-2 max-w-[23%] `}> 
           
         {
           sideBarOpen?<Sidebar setSideBarOpen={setSidebarOpen} />:<button className='h-[96vh] ps-2 text-xl' onClick={()=>{setSidebarOpen(true)}}><FontAwesomeIcon icon={faChevronRight}/></button>
         }
         </div>
-        <div className={`flex flex-col h-screen w-screen ms-${sideBarOpen?"[25%]":"8"} `}>
+        <div className={`flex flex-col h-screen w-screen ${sideBarOpen ? "ms-[25%]" : "ms-8"}`}>
           <Header />
             <Routes>
               <Route path='/' element={<Home />} />
