@@ -18,9 +18,9 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-row justify-around mt-4 ms-4 relative z-10">
+    <div className="flex flex-row justify-around mt-1 tablet:mt-4 ms-4 tablet:relative tablet:z-10">
       <div
-        className={`search w-full transition-all ease-in-out duration-300 ${
+        className={`search w-full transition-all ease-in-out duration-300 hidden tablet:block ${
           isExpanded ? "scale-105 border-primary" : ""
         }`}
       >

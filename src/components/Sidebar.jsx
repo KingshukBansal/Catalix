@@ -13,8 +13,8 @@ import PropTypes from "prop-types";
 
 const Sidebar = ({ setSideBarOpen }) => {
   return (
-    <div className=" h-fit w-full  ">
-      <div className="flex flex-col bg-primary rounded-[3rem] h-full w-full shadow-3xl">
+    <div className=" h-fit large-screen:h-full w-full flex justify-center  ">
+      <div className="flex flex-col bg-primary rounded-[3rem] h-full w-11/12 tablet:w-full shadow-3xl">
         <button
           className="w-full flex flex-row justify-end right-0 pt-8 pe-6 "
           onClick={() => {
@@ -24,14 +24,14 @@ const Sidebar = ({ setSideBarOpen }) => {
           <img
             src="/Left circle.png"
             alt="back"
-            className="w-8 h-8  hover:scale-110 transition-all ease-in-out duration-300"
+            className="w-8 h-8 rotate-90 tablet:rotate-0  hover:scale-110 transition-all ease-in-out duration-300"
           />
         </button>
-        <div className="scale-110 box text-4xl mt-6 font-bold text-white text-center flex flex-row justify-center items-center ">
-          <img src="/logo.png" />
+        <div className="tablet:scale-110 large-screen:scale-125 box text-3xl large-screen:text-5xl tablet:text-4xl mt-2 tablet:mt-6 font-bold text-white text-center flex flex-row justify-center items-center ">
+          <img src="/logo.png" className="h-16 w-16"/>
           Catalix
         </div>
-        <div className="grid grid-rows-5 gap-4 m-4 my-8 text-white items-center text-xl font-light">
+        <div className="grid grid-rows-5 gap-4 large-screen:gap-6 m-4 my-8 text-white items-center text-xl large-screen:text-3xl large-screen:px-2 font-light">
           <Link to={"/home"}>
             <li className="list-none hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 px-4 py-2 w-99/100 rounded-2xl">
               <FontAwesomeIcon icon={faHouse} className="me-4" />
@@ -63,8 +63,8 @@ const Sidebar = ({ setSideBarOpen }) => {
             </li>
           </Link>
         </div>
-        <hr className="mx-4 mt-16" />
-        <div className="flex flex-col mx-2 my-2 text-white items-center text-xl font-light">
+        <hr className="tablet:mx-4 tablet:mt-16 mt-8 mx-2" />
+        <div className="flex flex-col mx-2 my-2 text-white items-center text-xl large-screen:text-3xl large-screen:px-2 large-screen:h-full large-screen:items-around font-light">
           <ul className="w-full">
             <li className="my-1 mx-2 hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 p-4 w-99/100 rounded-2xl">
               <FontAwesomeIcon icon={faGear} className="me-4" />
