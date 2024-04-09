@@ -27,8 +27,8 @@ const Sidebar = ({ setSideBarOpen }) => {
             className="w-8 h-8 rotate-90 tablet:rotate-0  hover:scale-110 transition-all ease-in-out duration-300"
           />
         </button>
-        <div className="tablet:scale-110 large-screen:scale-125 box text-3xl large-screen:text-5xl tablet:text-4xl mt-2 tablet:mt-6 font-bold text-white text-center flex flex-row justify-center items-center ">
-          <img src="/logo.png" className="h-16 w-16"/>
+        <div className="tablet:scale-110 large-screen:scale-125 box text-3xl large-screen:text-4xl tablet:text-3xl mt-2 tablet:mt-6 font-bold text-white text-center flex flex-row justify-center items-center ">
+          <img src="/Box 3.svg" className="h-12 w-12 large-screen:h-16 large-screen:w-16  "/>
           Catalix
         </div>
         <div className="grid grid-rows-5 gap-4 large-screen:gap-6 m-4 my-8 text-white items-center text-xl large-screen:text-3xl large-screen:px-2 font-light">
