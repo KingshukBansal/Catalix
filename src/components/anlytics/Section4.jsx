@@ -7,8 +7,8 @@ const Section4 = () => {
     setSelectedOption(e.target.value);
   };
   return (
-    <div className="flex flex-col rounded-2xl bg-white w-full my-1 mx-2">
-      <div className="flex flex-row   justify-between pe-4">
+    <div className="flex flex-col rounded-2xl bg-white w-full my-1 mx-2 overflow-auto h-fit mb-4  border-2 tablet:border-none">
+      <div className="flex flex-row   justify-between pe-4 min-w-[100vh]">
         <div className="flex flex-row my-1 ms-2">
           <select
             id="pageFilter"
@@ -55,12 +55,12 @@ const Section4 = () => {
         </div>
       </div>
       {/* Table  */}
-      <div className=" w-full border-t-2 p-4">
-        <table className="table-auto w-full text-right">
-          <thead className="text-[15px] ">
+      <div className=" w-full border-t-2 tablet:p-4">
+        <table className="table-auto w-full text-right min-w-[100vh]">
+          <thead className="text-[15px] w-full ">
             <tr>
-              <th className="font-normal text-left">Page</th>
-              <th className="font-normal ">
+              <th className="font-normal text-left ">Page</th>
+              <th className="font-normal ms-2 tablet:ms-0 ">
                 <div className="flex flex-col w-full text-right items-end">
                   Pageviews <span className="text-lg ">356,928</span>
                   <span>
@@ -68,7 +68,7 @@ const Section4 = () => {
                   </span>
                 </div>
               </th>
-              <th className="font-normal">
+              <th className="font-normal ps-2 tablet:ps-0 ">
                 <div className="flex flex-col w-full text-right items-end">
                   Unique pageviews
                   <span className="text-lg">275,588</span>{" "}

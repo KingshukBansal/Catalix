@@ -60,7 +60,7 @@ import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
   
 const Section2 = () => {
   return (
-    <div className="grid grid-cols-4 grid-flow-col gap-4">
+<div className="grid grid-rows-4 tablet:grid-rows-none tablet:grid-cols-4 tablet:grid-flow-cols tablet:gap-4 gap-1">
       {data.map((d, i) => (
         <Card key={i} data={d} />
       ))}
@@ -71,7 +71,7 @@ const Section2 = () => {
 
 const Card = ({ data }) => { // Using object destructuring for the data prop
   return (
-    <div className={`card relative text-${data.textColor} hover:scale-105 transition-all ease-in-out duration-300 min-w-40 min-h-32`}>
+    <div className={`card relative text-${data.textColor} hover:scale-105 transition-all ease-in-out duration-300 p-4 tablet:p-0 min-w-40 min-h-32 `}>
       <img src={data.images} alt="image" className="h-auto w-full min-w-40 min-h-32"/>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start ps-8 ">
         <p className={` text-lg font-normal mb-1`}>{data.feature}</p>

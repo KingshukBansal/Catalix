@@ -23,7 +23,7 @@ function App() {
           sideBarOpen?<Sidebar setSideBarOpen={setSidebarOpen} />:<><button className='absolute hidden tablet:block tablet:h-[96vh] ps-4 tablet:ps-2 text-xl rotate-90 tablet:rotate-0 ' onClick={()=>{setSidebarOpen(true)}}><FontAwesomeIcon icon={faChevronRight}  /></button><button className='absolute top-6 left-5  tablet:hidden  ps-4  text-xl text-primary h-10 w-10 ' onClick={()=>{setSidebarOpen(true)}}><FontAwesomeIcon icon={faBars}  /></button></>
         }
         </div>
-        <div className={`flex flex-col h-screen w-screen tablet:px-0 px-2 ${sideBarOpen ? "tablet:ms-[21%] large-screen:ms-[25%]" : "tablet:ms-8"}`}>
+        <div className={`flex flex-col  min-h-screen w-screen tablet:px-0 px-2 ${sideBarOpen ? "tablet:ms-[21%] large-screen:ms-[25%]" : "tablet:ms-8"}`}>
           <Header />
             <Routes>
               <Route path='/' element={<Home />} />
