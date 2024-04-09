@@ -9,7 +9,11 @@ Link - https://catalix.vercel.app/
 - Tailwind CSS
 
 ## Screenshots
-<img src="/Screenshot1.png" alt="screenshot1" height={300} width={400}/>
+<img src="Images/Screenshot1.png" alt="screenshot1" height={200} width={250}/>
+<img src="Images/Screenshot2.png" alt="screenshot2" height={200} width={250}/>
+
+<img src="Images/Screenshot3.png" alt="screenshot3" height={200} width={250}/>
+
 
 
 ## Installation
