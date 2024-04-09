@@ -27,7 +27,7 @@ function App() {
           <Header />
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/home/draw' element={<Draw sideBarOpen={sideBarOpen}/>}/>
+              <Route path='/draw' element={<Draw sideBarOpen={sideBarOpen}/>}/>
               <Route path='/home' element={<Home />} />
               <Route path="/activities" element={<Activities  />} />
               <Route path="/analytics" element={<Analytics />} />

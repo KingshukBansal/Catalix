@@ -13,7 +13,7 @@ const Home = () => {
           <div className="flex flex-col justify-center items-center bg-white tablet:w-full  rounded-2xl drop-shadow-xl p-6 px-8 tablet:px-24 mt-2">
                <p className="py-2 px-8 text-white bg-secondary rounded-3xl w-fit text-xl mb-4">2/6</p>
                <p className="text-2xl text-center large-screen:text-3xl my-8">Build your development value stream map</p>
-               <Link to='draw'><button className="rounded-3xl px-8 py-2 my-4 text-xl bg-primary text-white font-medium hover:scale-110 transition-all ease-in-out duration-300 ">Start Building</button></Link>
+               <Link to='/draw'><button className="rounded-3xl px-8 py-2 my-4 text-xl bg-primary text-white font-medium hover:scale-110 transition-all ease-in-out duration-300 ">Start Building</button></Link>
                <ul className="flex flex-row text-2xl text-gray-500">
                 <li><FontAwesomeIcon icon={faCircle} className="h-[6px] w-[6px] ms-1 hover:-translate-y-1 duration-100 transition-all ease-in-out"/></li>
                 <li><FontAwesomeIcon icon={faCircle} className="h-[6px] w-[6px] ms-1 text-secondary hover:-translate-y-1 duration-100 transition-all ease-in-out"/></li>
