@@ -31,9 +31,9 @@ const Sidebar = ({ setSideBarOpen }) => {
           <img src="/Box 3.svg" className="h-12 w-12 large-screen:h-16 large-screen:w-16  "/>
           Catalix
         </div>
-        <div className="grid grid-rows-5 gap-4 large-screen:gap-6 m-4 my-8 text-white items-center text-xl large-screen:text-3xl large-screen:px-2 font-light">
+        <div className="grid grid-rows-5 gap-4  m-4 my-8 text-white items-center text-xl large-screen:text-2xl large-screen:px-2 font-light">
           <Link to={"/home"}>
-            <li className="list-none hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 px-4 py-2 w-99/100 rounded-2xl">
+            <li className="list-none hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 px-4 py-2  w-99/100 rounded-2xl">
               <FontAwesomeIcon icon={faHouse} className="me-4" />
               Home
             </li>
@@ -63,18 +63,16 @@ const Sidebar = ({ setSideBarOpen }) => {
             </li>
           </Link>
         </div>
-        <hr className="tablet:mx-4 tablet:mt-16 mt-8 mx-2" />
-        <div className="flex flex-col mx-2 my-2 text-white items-center text-xl large-screen:text-3xl large-screen:px-2 large-screen:h-full large-screen:items-around font-light">
-          <ul className="w-full">
-            <li className="my-1 mx-2 hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 p-4 w-99/100 rounded-2xl">
+        <hr className="tablet:mx-4 tablet:mt-8 mt-8 mx-2" />
+        <div className="grid grid-rows-2 gap-4  m-4 my-8 text-white items-center text-xl large-screen:text-2xl large-screen:px-2 font-light">
+            <li className="list-none hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 px-4  py-2 w-99/100 rounded-2xl">
               <FontAwesomeIcon icon={faGear} className="me-4" />
               Settings
             </li>
-            <li className="my-1 mx-2 hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 p-4 w-99/100 rounded-2xl">
+            <li className="list-none hover:scale-105 hover:bg-secondary transition-all ease-in-out duration-300 px-4  py-2 w-99/100 rounded-2xl">
               <FontAwesomeIcon icon={faRightFromBracket} className="me-4" />
               Logout
             </li>
-          </ul>
         </div>
       </div>
     </div>

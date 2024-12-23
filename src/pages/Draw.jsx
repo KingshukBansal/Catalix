@@ -10,9 +10,9 @@ const Draw = ({sideBarOpen}) => {
     
     <div className={`flex flex-col items-center justify-center ${sideBarOpen?'tablet:w-[75vw]':'tablet:w-[95vw]'} w-full relative `}>
       <div className={`flex flex-row items-start justify-start overflow-x-auto no-scrollbar mt-24 py-8 w-full ms-2 tablet:ms-0 tablet:${sideBarOpen?'w-[75vw]':'w-[90vw]'}`}>
-        <div className="flex flex-col items-center justify-center h-full text-left  font-medium text-gray-500  ">
-          <div className="flex h-full"></div>
-          <div className="flex h-full w-28 mt-5">Active Time</div>
+        <div className="flex flex-col items-center justify-center h-72 laptop:h-full text-left  font-medium text-gray-500   ">
+          <div className="flex h-full "></div>
+          <div className="flex h-full  w-28 mt-5">Active Time</div>
           <div className="flex h-full w-full">Wait Time</div>
         </div>
         <div className="flex flex-row items-start justify-center  border-b-4 border-secondary relative">

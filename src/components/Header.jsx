@@ -41,11 +41,11 @@ const Header = () => {
           </div>
           {isExpanded && (
             <div className="absolute top-0 right-0 me-20 flex items-center h-full mr-2">
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faClose}
                 className="text-gray-400 cursor-pointer"
                 onClick={handleClearSearch}
-              />
+              /> */}
             </div>
           )}
         </div>
